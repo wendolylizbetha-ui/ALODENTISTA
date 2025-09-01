@@ -1,0 +1,77 @@
+/* RESET Y BASE */
+* {margin:0; padding:0; box-sizing:border-box; font-family:'Poppins', sans-serif;}
+body {background:#f8f8ff; color:#333;}
+a{text-decoration:none; color:inherit;}
+img{max-width:100%;}
+
+/* BARRA DE NAVEGACION */
+nav{
+  position:fixed; width:100%; top:0; left:0;
+  background:linear-gradient(to right, #b19cd9, #d8bfea);
+  display:flex; justify-content:space-between; align-items:center;
+  padding:15px 50px; z-index:1000;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+nav .logo{font-weight:600; font-size:1.5rem; color:white;}
+nav ul{display:flex; list-style:none; gap:25px;}
+nav ul li a{color:white; font-weight:500; transition:0.3s;}
+nav ul li a:hover{color:#fff176;}
+nav input[type="search"]{
+  padding:5px 10px; border-radius:20px; border:none; outline:none;
+}
+
+/* HERO */
+.hero{
+  padding:150px 50px 100px 50px; text-align:center;
+  background:linear-gradient(to right, #d8bfea, #b19cd9);
+  color:white;
+}
+.hero h1{font-size:2.5rem; margin-bottom:10px;}
+.hero p{font-size:1.2rem; margin-bottom:20px;}
+.hero a{padding:10px 25px; background:#fff176; color:#333; border-radius:50px; font-weight:600; transition:0.3s;}
+.hero a:hover{background:#fff; color:#b19cd9;}
+
+/* SECCIONES */
+section{padding:80px 50px;}
+section h2{text-align:center; font-size:2rem; margin-bottom:50px; color:#5e4b8b;}
+
+/* SOBRE MI */
+.sobre-mi{display:flex; flex-direction:column; align-items:center; gap:20px; max-width:900px; margin:0 auto;}
+.sobre-mi p{line-height:1.8; text-align:center; font-size:1.1rem;}
+
+/* SERVICIOS */
+.servicios{display:grid; grid-template-columns:repeat(auto-fit, minmax(250px,1fr)); gap:30px;}
+.servicio{background:white; padding:30px; border-radius:20px; box-shadow:0 5px 15px rgba(0,0,0,0.1); text-align:center; transition:0.3s;}
+.servicio:hover{transform:translateY(-10px);}
+.servicio i{font-size:2.5rem; color:#b19cd9; margin-bottom:15px;}
+.servicio h3{margin-bottom:10px;}
+.servicio p{line-height:1.6;}
+.servicio .highlight{color:#ff6f61; font-weight:600;}
+
+/* INFO INTERESANTE */
+.info-interesante{background:#f0e6fa; border-radius:20px; padding:30px; max-width:1000px; margin:0 auto; line-height:1.7;}
+
+/* FORMULARIO DE CITAS */
+.form-citas{max-width:700px; margin:0 auto; background:white; padding:40px; border-radius:20px; box-shadow:0 5px 20px rgba(0,0,0,0.1);}
+.form-citas input, .form-citas textarea, .form-citas select{width:100%; padding:12px; margin-bottom:15px; border-radius:10px; border:1px solid #ccc; outline:none;}
+.form-citas button{padding:12px 25px; background:#b19cd9; color:white; border:none; border-radius:50px; font-weight:600; cursor:pointer; transition:0.3s;}
+.form-citas button:hover{background:#5e4b8b;}
+
+/* ALERTA */
+.alerta{
+  display:none; position:fixed; top:20px; right:20px;
+  background:#5e4b8b; color:white; padding:15px 25px;
+  border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.2);
+  font-weight:600; z-index:2000;
+}
+
+/* CONTACTO */
+.contacto{display:flex; flex-direction:column; gap:15px; max-width:500px; margin:0 auto; text-align:center;}
+.contacto a{color:#5e4b8b; font-weight:600;}
+
+/* DERECHOS */
+footer{text-align:center; padding:25px; background:#b19cd9; color:white; font-weight:500;}
+
+/* EFECTOS SCROLL */
+.fade-in{opacity:0; transform:translateY(30px); transition:all 0.8s ease;}
+.fade-in.visible{opacity:1; transform:translateY(0);}

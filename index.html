@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alondra Oceguera Aispuro - Odontología</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- BARRA DE NAVEGACION -->
+  <nav>
+    <div class="logo">Alondra Oceguera 🦷</div>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#info">Info</a></li>
+      <li><a href="#citas">Citas</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <input type="search" placeholder="Buscar sección...">
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <h1>Bienvenida a tu cuidado dental 🦷</h1>
+    <p>Alondra Oceguera Aispuro - Estudiante de Odontología UAS. Tratamientos supervisados por odontólogo calificado y totalmente gratuitos.</p>
+    <a href="#citas">Agendar Cita</a>
+  </section>
+
+  <!-- SOBRE MI -->
+  <section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <div class="sobre-mi fade-in">
+      <p>¡Hola! Soy <strong>Alondra Oceguera Aispuro</strong>, estudiante de odontología de la Universidad Autónoma de Sinaloa. Apasionada por la salud oral y el bienestar de mis pacientes, ofrezco tratamientos supervisados por profesionales, con dedicación y compromiso. Me encanta combinar la ciencia dental con un enfoque humano, buscando siempre la mejor sonrisa para cada paciente.</p>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios">
+    <h2>Servicios 🦷</h2>
+    <div class="servicios">
+      <div class="servicio fade-in">
+        <i class="fas fa-tooth"></i>
+        <h3>Limpieza Dental 🪥</h3>
+        <p>Eliminación de placa y sarro, garantizando una sonrisa saludable.</p>
+      </div>
+      <div class="servicio fade-in">
+        <i class="fas fa-tint"></i>
+        <h3>Aplicación de Flúor 🦷</h3>
+        <p>Fortalece el esmalte y previene caries de manera efectiva.</p>
+      </div>
+      <div class="servicio fade-in">
+        <i class="fas fa-stethoscope"></i>
+        <h3>Revisión General 🦷</h3>
+        <p>Chequeo completo de tu salud oral para detectar cualquier problema a tiempo.</p>
+      </div>
+      <div class="servicio fade-in">
+        <i class="fas fa-tooth"></i>
+        <h3>Tratamiento Periodontitis 🦷</h3>
+        <p>Atención profesional para encías sanas y prevenir complicaciones.</p>
+      </div>
+      <div class="servicio fade-in">
+        <i class="fas fa-smile"></i>
+        <h3>Orientación e Higiene Oral 🦷</h3>
+        <p>Aprende técnicas correctas de cepillado y cuidado dental. <span class="highlight">Supervisado por odontólogo calificado</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- INFO INTERESANTE -->
+  <section id="info">
+    <h2>Datos interesantes sobre procedimientos 🦷</h2>
+    <div class="info-interesante fade-in">
+      <ul>
+        <li>La limpieza dental profesional ayuda a prevenir enfermedades como caries y gingivitis.</li>
+        <li>La aplicación de flúor fortalece el esmalte y reduce el riesgo de caries hasta en un 40%.</li>
+        <li>La revisión periódica permite detectar problemas antes de que se vuelvan graves.</li>
+        <li>El tratamiento de la periodontitis es crucial para mantener las encías saludables y evitar la pérdida de dientes.</li>
+        <li>La orientación en higiene oral asegura que el cuidado en casa sea tan efectivo como el realizado en clínica.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FORMULARIO DE CITAS -->
+  <section id="citas">
+    <h2>Agendar Cita 🦷</h2>
+    <div class="form-citas fade-in">
+      <input type="text" id="nombre" placeholder="Nombre completo" required>
+      <input type="email" id="correo" placeholder="Correo electrónico" required>
+      <input type="tel" id="telefono" placeholder="Teléfono" required>
+      <input type="date" id="fecha" required>
+      <textarea id="mensaje" placeholder="Mensaje (opcional)"></textarea>
+      <button onclick="agendarCita()">Enviar Cita</button>
+    </div>
+  </section>
+
+  <!-- ALERTA -->
+  <div class="alerta" id="alerta">¡Cita agendada exitosamente! 🦷</div>
+
+  <!-- CONTACTO -->
+  <section id="contacto">
+    <h2>Contacto 📞</h2>
+    <div class="contacto fade-in">
+      <p>Sígueme en Instagram: <a href="https://www.instagram.com/odontoaloo/" target="_blank">@odontoaloo</a></p>
+      <p>Correo: alondra.odontologia@uas.edu.mx</p>
+      <p>Teléfono: +52 651 101 31 35</p>
+      <p>Facultad de Odontología UAS 🏫</p>
+    </div>
+  </section>
+
+  <!-- DERECHOS RESERVADOS -->
+  <footer>
+    &copy; WEN 2025 . Todos los derechos reservados 🦷
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
